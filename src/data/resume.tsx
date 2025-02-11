@@ -11,7 +11,7 @@ export const DATA = {
     "Mi fascinación por la tecnología junto a mi formación, me han provisto de habilidades únicas con un enfoque práctico.",
   summary:
     "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
-  avatarUrl: "/me.png",
+  avatarUrl: "https://alejandrogl.es/wp-content/uploads/2023/06/DSC_1707-copia-e1687254499257-2048x1536.png",
   skills: [
     "C",
     "C#",
