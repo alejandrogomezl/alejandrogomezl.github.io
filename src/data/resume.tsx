@@ -18,7 +18,6 @@ export const DATA = {
     "Java",
     "Python",
     "JavaScript",
-    
     "Node.js",
     "Next.js",
     "SQL",
@@ -51,7 +50,7 @@ export const DATA = {
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "www.linkedin.com/in/alejandro-gomez-lozano",
+        url: "https://www.linkedin.com/in/alejandro-gomez-lozano",
         icon: Icons.linkedin,
 
         navbar: true,
