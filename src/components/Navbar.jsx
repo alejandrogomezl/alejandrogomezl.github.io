@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import LanguageSwitcher from './LanguageSwitcher';
 import './Navbar.css';
 
 const Navbar = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -16,11 +19,11 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { title: 'Home', href: '#home' },
-    { title: 'About', href: '#about' },
-    { title: 'Projects', href: '#projects' },
-    { title: 'Skills', href: '#skills' },
-    { title: 'Contact', href: '#contact' },
+    { title: t('navbar.home'), href: '#home' },
+    { title: t('navbar.about'), href: '#about' },
+    { title: t('navbar.projects'), href: '#projects' },
+    { title: t('navbar.skills'), href: '#skills' },
+    { title: t('navbar.contact'), href: '#contact' },
   ];
 
   return (
@@ -36,11 +39,15 @@ const Navbar = () => {
               {link.title}
             </a>
           ))}
+          <LanguageSwitcher />
         </div>
 
-        <button className="mobile-toggle" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <X /> : <Menu />}
-        </button>
+        <div className="mobile-controls">
+          <LanguageSwitcher />
+          <button className="mobile-toggle" onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? <X /> : <Menu />}
+          </button>
+        </div>
 
         <AnimatePresence>
           {isOpen && (

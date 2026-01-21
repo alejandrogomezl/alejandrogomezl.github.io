@@ -1,9 +1,12 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Code, Server, Globe } from 'lucide-react';
 import './About.css';
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="about" className="about">
       <div className="about-container">
@@ -14,26 +17,22 @@ const About = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">About Me</h2>
+          <h2 className="section-title">{t('about.title')}</h2>
           <p className="about-text">
-            I am a passionate Software Engineer with a strong foundation in building modern web applications. 
-            My journey in tech is driven by a curiosity to understand how things work and a desire to create 
-            solutions that make a difference.
+            {t('about.p1')}
           </p>
           <p className="about-text">
-            With expertise in both frontend and backend development, I enjoy tackling complex problems 
-            and turning ideas into robust, scalable software. I thrive in collaborative environments 
-            and am always eager to learn new technologies.
+            {t('about.p2')}
           </p>
           
           <div className="stats-grid">
             <div className="stat-item">
               <span className="stat-number">3+</span>
-              <span className="stat-label">Years Experience</span>
+              <span className="stat-label">{t('about.yearsExperience')}</span>
             </div>
             <div className="stat-item">
               <span className="stat-number">20+</span>
-              <span className="stat-label">Projects Completed</span>
+              <span className="stat-label">{t('about.projectsCompleted')}</span>
             </div>
           </div>
         </motion.div>

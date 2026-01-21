@@ -1,0 +1,63 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "role": "Software Engineer",
+    "description": "Building scalable, high-performance web applications with modern technologies. Focused on creating exceptional user experiences.",
+    "viewWork": "View Work",
+    "contactMe": "Contact Me"
+  },
+  "about": {
+    "title": "About Me",
+    "p1": "I am a passionate Software Engineer with a strong foundation in building modern web applications. My journey in tech is driven by a curiosity to understand how things work and a desire to create solutions that make a difference.",
+    "p2": "With expertise in both frontend and backend development, I enjoy tackling complex problems and turning ideas into robust, scalable software. I thrive in collaborative environments and am always eager to learn new technologies.",
+    "yearsExperience": "Years Experience",
+    "projectsCompleted": "Projects Completed"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "ecommerce": {
+      "title": "E-Commerce Platform",
+      "description": "A full-featured online store with cart functionality, payment gateway, and admin dashboard."
+    },
+    "taskApp": {
+      "title": "Task Management App",
+      "description": "Collaborative project management tool with real-time updates and drag-and-drop interface."
+    },
+    "finance": {
+      "title": "Finance Dashboard",
+      "description": "Data visualization dashboard for tracking personal expenses and investments."
+    }
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "frontend": "Frontend Development",
+    "backend": "Backend & Database",
+    "tools": "Tools & DevOps",
+    "core": "Core Concepts"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Have a project in mind or just want to chat? I'd love to hear from you.",
+    "emailMe": "Email Me",
+    "location": "Location",
+    "callMe": "Call Me",
+    "form": {
+      "namePlaceholder": "Your Name",
+      "emailPlaceholder": "Your Email",
+      "subjectPlaceholder": "Subject",
+      "messagePlaceholder": "Your Message",
+      "send": "Send Message"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Built with"
+  }
+}

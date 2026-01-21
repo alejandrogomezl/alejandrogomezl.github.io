@@ -1,0 +1,63 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "role": "Ingeniero de Software",
+    "description": "Desarrollando aplicaciones web escalables y de alto rendimiento con tecnologías modernas. Enfocado en crear experiencias de usuario excepcionales.",
+    "viewWork": "Ver Trabajos",
+    "contactMe": "Contáctame"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "p1": "Soy un apasionado Ingeniero de Software con una sólida base en el desarrollo de aplicaciones web modernas. Mi trayectoria tecnológica está impulsada por la curiosidad de entender cómo funcionan las cosas y el deseo de crear soluciones que marquen la diferencia.",
+    "p2": "Con experiencia tanto en frontend como en backend, disfruto abordando problemas complejos y convirtiendo ideas en software robusto y escalable. Me desenvuelvo bien en entornos colaborativos y siempre estoy ansioso por aprender nuevas tecnologías.",
+    "yearsExperience": "Años de Experiencia",
+    "projectsCompleted": "Proyectos Completados"
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "ecommerce": {
+      "title": "Plataforma E-Commerce",
+      "description": "Una tienda online completa con funcionalidad de carrito, pasarela de pago y panel de administración."
+    },
+    "taskApp": {
+      "title": "App de Gestión de Tareas",
+      "description": "Herramienta colaborativa de gestión de proyectos con actualizaciones en tiempo real e interfaz drag-and-drop."
+    },
+    "finance": {
+      "title": "Dashboard Financiero",
+      "description": "Dashboard de visualización de datos para el seguimiento de gastos personales e inversiones."
+    }
+  },
+  "skills": {
+    "title": "Habilidades Técnicas",
+    "frontend": "Desarrollo Frontend",
+    "backend": "Backend y Base de Datos",
+    "tools": "Herramientas y DevOps",
+    "core": "Conceptos Core"
+  },
+  "contact": {
+    "title": "Hablemos",
+    "subtitle": "¿Tienes un proyecto en mente o simplemente quieres charlar? Me encantaría saber de ti.",
+    "emailMe": "Envíame un Email",
+    "location": "Ubicación",
+    "callMe": "Llámame",
+    "form": {
+      "namePlaceholder": "Tu Nombre",
+      "emailPlaceholder": "Tu Email",
+      "subjectPlaceholder": "Asunto",
+      "messagePlaceholder": "Tu Mensaje",
+      "send": "Enviar Mensaje"
+    }
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "builtWith": "Creado con"
+  }
+}

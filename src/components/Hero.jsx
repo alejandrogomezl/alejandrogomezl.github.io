@@ -1,9 +1,12 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import './Hero.css';
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="home" className="hero">
       <div className="hero-content">
@@ -13,7 +16,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          Hello, I'm
+          {t('hero.greeting')}
         </motion.span>
         
         <motion.h1 
@@ -22,7 +25,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          Alejandro Gomez
+          Alejandro Gómez
         </motion.h1>
         
         <motion.h2 
@@ -31,7 +34,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          Software Engineer
+          {t('hero.role')}
         </motion.h2>
         
         <motion.p 
@@ -40,8 +43,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          Building scalable, high-performance web applications with modern technologies. 
-          Focused on creating exceptional user experiences.
+          {t('hero.description')}
         </motion.p>
 
         <motion.div 
@@ -50,8 +52,8 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}
         >
-          <a href="#projects" className="btn btn-primary">View Work</a>
-          <a href="#contact" className="btn btn-outline">Contact Me</a>
+          <a href="#projects" className="btn btn-primary">{t('hero.viewWork')}</a>
+          <a href="#contact" className="btn btn-outline">{t('hero.contactMe')}</a>
         </motion.div>
 
         <motion.div 

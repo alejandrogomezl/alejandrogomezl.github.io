@@ -1,9 +1,12 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Phone, Send } from 'lucide-react';
 import './Contact.css';
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="contact" className="contact">
       <div className="contact-container">
@@ -13,9 +16,9 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title">Get In Touch</h2>
+          <h2 className="section-title">{t('contact.title')}</h2>
           <p className="contact-subtitle">
-            Have a project in mind or just want to chat? I'd love to hear from you.
+            {t('contact.subtitle')}
           </p>
         </motion.div>
 
@@ -32,7 +35,7 @@ const Contact = () => {
                 <Mail size={24} />
               </div>
               <div>
-                <h3>Email Me</h3>
+                <h3>{t('contact.emailMe')}</h3>
                 <a href="mailto:hello@example.com">hello@example.com</a>
               </div>
             </div>
@@ -42,7 +45,7 @@ const Contact = () => {
                 <MapPin size={24} />
               </div>
               <div>
-                <h3>Location</h3>
+                <h3>{t('contact.location')}</h3>
                 <p>Madrid, Spain</p>
               </div>
             </div>
@@ -52,7 +55,7 @@ const Contact = () => {
                 <Phone size={24} />
               </div>
               <div>
-                <h3>Call Me</h3>
+                <h3>{t('contact.callMe')}</h3>
                 <p>+34 123 456 789</p>
               </div>
             </div>
@@ -67,19 +70,19 @@ const Contact = () => {
             onSubmit={(e) => e.preventDefault()}
           >
             <div className="form-group">
-              <input type="text" placeholder="Your Name" required />
+              <input type="text" placeholder={t('contact.form.namePlaceholder')} required />
             </div>
             <div className="form-group">
-              <input type="email" placeholder="Your Email" required />
+              <input type="email" placeholder={t('contact.form.emailPlaceholder')} required />
             </div>
             <div className="form-group">
-              <input type="text" placeholder="Subject" required />
+              <input type="text" placeholder={t('contact.form.subjectPlaceholder')} required />
             </div>
             <div className="form-group">
-              <textarea placeholder="Your Message" rows="5" required></textarea>
+              <textarea placeholder={t('contact.form.messagePlaceholder')} rows="5" required></textarea>
             </div>
             <button type="submit" className="submit-btn">
-              <span>Send Message</span>
+              <span>{t('contact.form.send')}</span>
               <Send size={18} />
             </button>
           </motion.form>

@@ -1,32 +1,35 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Code2, Database, Layout, Settings } from 'lucide-react';
 import './Skills.css';
 
-const skillCategories = [
-  {
-    title: "Frontend Development",
-    icon: <Layout size={24} />,
-    skills: ["React", "Vue.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Next.js"]
-  },
-  {
-    title: "Backend & Database",
-    icon: <Database size={24} />,
-    skills: ["Node.js", "Python", "PostgreSQL", "MongoDB", "Redis", "GraphQL"]
-  },
-  {
-    title: "Tools & DevOps",
-    icon: <Settings size={24} />,
-    skills: ["Git", "Docker", "AWS", "CI/CD", "Jest", "Webpack"]
-  },
-  {
-    title: "Core Concepts",
-    icon: <Code2 size={24} />,
-    skills: ["Data Structures", "Algorithms", "System Design", "OOP", "Functional Programming"]
-  }
-];
-
 const Skills = () => {
+  const { t } = useTranslation();
+
+  const skillCategories = [
+    {
+      title: t('skills.frontend'),
+      icon: <Layout size={24} />,
+      skills: ["React", "Vue.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Next.js"]
+    },
+    {
+      title: t('skills.backend'),
+      icon: <Database size={24} />,
+      skills: ["Node.js", "Python", "PostgreSQL", "MongoDB", "Redis", "GraphQL"]
+    },
+    {
+      title: t('skills.tools'),
+      icon: <Settings size={24} />,
+      skills: ["Git", "Docker", "AWS", "CI/CD", "Jest", "Webpack"]
+    },
+    {
+      title: t('skills.core'),
+      icon: <Code2 size={24} />,
+      skills: ["Data Structures", "Algorithms", "System Design", "OOP", "Functional Programming"]
+    }
+  ];
+
   return (
     <section id="skills" className="skills">
       <div className="skills-container">
@@ -36,7 +39,7 @@ const Skills = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Technical Skills
+          {t('skills.title')}
         </motion.h2>
 
         <div className="skills-grid">
