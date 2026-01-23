@@ -36,7 +36,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3>{t('contact.emailMe')}</h3>
-                <a href="mailto:hello@example.com">hello@example.com</a>
+                <a href="mailto:info@alejandrogl.es">info@alejandrogl.es</a>
               </div>
             </div>
             
@@ -46,19 +46,10 @@ const Contact = () => {
               </div>
               <div>
                 <h3>{t('contact.location')}</h3>
-                <p>Madrid, Spain</p>
+                <p>Albacete, Spain</p>
               </div>
             </div>
 
-            <div className="info-item">
-              <div className="info-icon">
-                <Phone size={24} />
-              </div>
-              <div>
-                <h3>{t('contact.callMe')}</h3>
-                <p>+34 123 456 789</p>
-              </div>
-            </div>
           </motion.div>
 
           <motion.form 

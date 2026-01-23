@@ -1,50 +1,58 @@
 {
   "navbar": {
     "home": "Home",
-    "about": "About",
+    "about": "About Me",
     "projects": "Projects",
     "skills": "Skills",
     "contact": "Contact"
   },
   "hero": {
-    "greeting": "Hello, I'm",
+    "greeting": "Hi, I'm",
     "role": "Software Engineer",
-    "description": "Building scalable, high-performance web applications with modern technologies. Focused on creating exceptional user experiences.",
+    "description": "I design and build real-world software solutions, from backends and integrations to infrastructure, home automation, and IoT, with a product mindset and business focus.",
     "viewWork": "View Work",
     "contactMe": "Contact Me"
   },
   "about": {
     "title": "About Me",
-    "p1": "I am a passionate Software Engineer with a strong foundation in building modern web applications. My journey in tech is driven by a curiosity to understand how things work and a desire to create solutions that make a difference.",
-    "p2": "With expertise in both frontend and backend development, I enjoy tackling complex problems and turning ideas into robust, scalable software. I thrive in collaborative environments and am always eager to learn new technologies.",
-    "yearsExperience": "Years Experience",
+    "p1": "I am a Software Engineer with experience in designing and building real-world systems, ranging from backends and complex integrations to infrastructure, automation, and IoT solutions. My career is shaped by working in business-oriented professional environments, as well as by building my own products.",
+    "p2": "I have worked as a developer and functional consultant on ERP projects, custom integrations, and freelance development, tackling complex technical challenges and turning them into scalable, maintainable solutions aligned with client needs.",
+    "yearsExperience": "Years of Experience",
     "projectsCompleted": "Projects Completed"
   },
   "projects": {
     "title": "Featured Projects",
-    "ecommerce": {
-      "title": "E-Commerce Platform",
-      "description": "A full-featured online store with cart functionality, payment gateway, and admin dashboard."
+    "nebstala": {
+      "title": "Nebstala · Smart Domotics Management for STR",
+      "description": "A smart domotics management system for short-term rental (STR) properties, centralizing access control, climate management, and smart devices to automate operations, reduce energy consumption, and enhance the guest experience."
     },
-    "taskApp": {
-      "title": "Task Management App",
-      "description": "Collaborative project management tool with real-time updates and drag-and-drop interface."
+    "homelab": {
+      "title": "Home Lab Server",
+      "description": "A self-hosted infrastructure for virtualization, containers, and service deployment, used as a development, testing, automation, and DevOps experimentation environment."
     },
-    "finance": {
-      "title": "Finance Dashboard",
-      "description": "Data visualization dashboard for tracking personal expenses and investments."
+    "unitree": {
+      "title": "Unitree Robotics Integration",
+      "description": "A quadruped robotics integration and control project, combining software, systems, and IoT for experimentation, automation, and advanced device control."
+    },
+    "odoo": {
+      "title": "Odoo Development & Integrations",
+      "description": "Custom module development, tailored integrations, and functional consulting in ERP environments to optimize business processes."
+    },
+    "meshtastic": {
+      "title": "Meshtastic · Mesh Networking & LoRa",
+      "description": "Deployment and configuration of LoRa-based mesh networks with Meshtastic, focused on decentralized, resilient, and long-range communications, integrating nodes, sensors, and custom services."
     }
   },
   "skills": {
     "title": "Technical Skills",
     "frontend": "Frontend Development",
-    "backend": "Backend & Database",
+    "backend": "Backend & Databases",
     "tools": "Tools & DevOps",
     "core": "Core Concepts"
   },
   "contact": {
-    "title": "Get In Touch",
-    "subtitle": "Have a project in mind or just want to chat? I'd love to hear from you.",
+    "title": "Let's Talk",
+    "subtitle": "Do you have a project in mind or just want to chat? I'd love to hear from you.",
     "emailMe": "Email Me",
     "location": "Location",
     "callMe": "Call Me",

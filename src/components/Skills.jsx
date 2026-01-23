@@ -21,12 +21,7 @@ const Skills = () => {
     {
       title: t('skills.tools'),
       icon: <Settings size={24} />,
-      skills: ["Git", "Docker", "AWS", "CI/CD", "Jest", "Webpack"]
-    },
-    {
-      title: t('skills.core'),
-      icon: <Code2 size={24} />,
-      skills: ["Data Structures", "Algorithms", "System Design", "OOP", "Functional Programming"]
+      skills: ["Git", "Docker", "AWS", "CI/CD"]
     }
   ];
 

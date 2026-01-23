@@ -27,13 +27,13 @@ const About = () => {
           
           <div className="stats-grid">
             <div className="stat-item">
-              <span className="stat-number">3+</span>
+              <span className="stat-number">2+</span>
               <span className="stat-label">{t('about.yearsExperience')}</span>
             </div>
-            <div className="stat-item">
-              <span className="stat-number">20+</span>
+            {/* <div className="stat-item">
+              <span className="stat-number">+</span>
               <span className="stat-label">{t('about.projectsCompleted')}</span>
-            </div>
+            </div> */}
           </div>
         </motion.div>
 
@@ -54,11 +54,11 @@ const About = () => {
             <div className="window-content">
               <pre>
                 <code>
-<span className="json-key">"name"</span>: <span className="json-string">"Alejandro Gomez"</span>,
+<span className="json-key">"name"</span>: <span className="json-string">"Alejandro Gómez"</span>,
 <br/>
 <span className="json-key">"role"</span>: <span className="json-string">"Software Engineer"</span>,
 <br/>
-<span className="json-key">"location"</span>: <span className="json-string">"Madrid, Spain"</span>,
+<span className="json-key">"location"</span>: <span className="json-string">"Albacete, Spain"</span>,
 <br/>
 <span className="json-key">"traits"</span>: [
 <br/>
@@ -74,11 +74,12 @@ const About = () => {
 <br/>
   <span className="json-string">"Coding"</span>,
 <br/>
-  <span className="json-string">"Gaming"</span>,
+  <span className="json-string">"Sports"</span>,
 <br/>
-  <span className="json-string">"Design"</span>
+  <span className="json-string">"Robotics"</span>
 <br/>
-]</code>
+]
+</code>
               </pre>
             </div>
           </div>

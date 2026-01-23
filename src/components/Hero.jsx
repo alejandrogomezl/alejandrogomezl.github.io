@@ -64,7 +64,7 @@ const Hero = () => {
         >
           <a href="#" target="_blank" rel="noopener noreferrer" className="social-icon"><Github size={24} /></a>
           <a href="#" target="_blank" rel="noopener noreferrer" className="social-icon"><Linkedin size={24} /></a>
-          <a href="mailto:email@example.com" className="social-icon"><Mail size={24} /></a>
+          <a href="mailto:info@alejandrogl.es" className="social-icon"><Mail size={24} /></a>
         </motion.div>
       </div>
 

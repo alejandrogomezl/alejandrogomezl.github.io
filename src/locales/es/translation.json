@@ -9,30 +9,38 @@
   "hero": {
     "greeting": "Hola, soy",
     "role": "Ingeniero de Software",
-    "description": "Desarrollando aplicaciones web escalables y de alto rendimiento con tecnologías modernas. Enfocado en crear experiencias de usuario excepcionales.",
+    "description": "Diseño y desarrollo soluciones de software reales, desde backends e integraciones hasta infraestructura, domótica e IoT, con mentalidad de producto y foco en negocio.",
     "viewWork": "Ver Trabajos",
     "contactMe": "Contáctame"
   },
   "about": {
     "title": "Sobre Mí",
-    "p1": "Soy un apasionado Ingeniero de Software con una sólida base en el desarrollo de aplicaciones web modernas. Mi trayectoria tecnológica está impulsada por la curiosidad de entender cómo funcionan las cosas y el deseo de crear soluciones que marquen la diferencia.",
-    "p2": "Con experiencia tanto en frontend como en backend, disfruto abordando problemas complejos y convirtiendo ideas en software robusto y escalable. Me desenvuelvo bien en entornos colaborativos y siempre estoy ansioso por aprender nuevas tecnologías.",
+    "p1": "Soy Ingeniero de Software con experiencia en el diseño y desarrollo de sistemas reales, desde backends e integraciones complejas hasta infraestructura, automatización y soluciones IoT. Mi trayectoria está marcada por el trabajo en entornos profesionales orientados a negocio, además de la creación de productos propios.",
+    "p2": "He trabajado como desarrollador y consultor funcional en proyectos ERP, integraciones a medida y desarrollo freelance, afrontando problemas técnicos complejos y transformándolos en soluciones escalables, mantenibles y alineadas con las necesidades del cliente.",
     "yearsExperience": "Años de Experiencia",
     "projectsCompleted": "Proyectos Completados"
   },
   "projects": {
     "title": "Proyectos Destacados",
-    "ecommerce": {
-      "title": "Plataforma E-Commerce",
-      "description": "Una tienda online completa con funcionalidad de carrito, pasarela de pago y panel de administración."
+    "nebstala": {
+      "title": "Nebstala · Smart Domotics Management for STR",
+      "description": "Sistema de gestión domótica orientado a alojamientos de alquiler de corta estancia (STR), que centraliza el control de accesos, climatización y dispositivos inteligentes para automatizar operaciones, reducir el consumo energético y mejorar la experiencia del huésped."
     },
-    "taskApp": {
-      "title": "App de Gestión de Tareas",
-      "description": "Herramienta colaborativa de gestión de proyectos con actualizaciones en tiempo real e interfaz drag-and-drop."
+    "homelab": {
+      "title": "Home Lab Server",
+      "description": "Infraestructura autoalojada para virtualización, contenedores y despliegue de servicios, utilizada como entorno de desarrollo, pruebas, automatización y experimentación DevOps."
     },
-    "finance": {
-      "title": "Dashboard Financiero",
-      "description": "Dashboard de visualización de datos para el seguimiento de gastos personales e inversiones."
+    "unitree": {
+      "title": "Unitree Robotics Integration",
+      "description": "Proyecto de integración y control de robótica cuadrúpeda, combinando software, sistemas e IoT para experimentación, automatización y control avanzado de dispositivos."
+    },
+    "odoo": {
+      "title": "Desarrollo e Integraciones en Odoo",
+      "description": "Desarrollo de módulos personalizados, integraciones a medida y consultoría funcional en entornos ERP para la optimización de procesos de negocio."
+    },
+    "meshtastic": {
+      "title": "Meshtastic · Mesh Networking & LoRa",
+      "description": "Despliegue y configuración de redes mesh basadas en LoRa con Meshtastic, orientadas a comunicaciones descentralizadas, resilientes y de largo alcance, integrando nodos, sensores y servicios personalizados."
     }
   },
   "skills": {
