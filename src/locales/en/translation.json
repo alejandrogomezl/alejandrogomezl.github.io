@@ -61,7 +61,10 @@
       "emailPlaceholder": "Your Email",
       "subjectPlaceholder": "Subject",
       "messagePlaceholder": "Your Message",
-      "send": "Send Message"
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "There was an error sending the message. Please try again."
     }
   },
   "footer": {

@@ -138,3 +138,31 @@
         padding: 1.5rem;
     }
 }
+
+/* Button States */
+.submit-btn.sending {
+    background-color: var(--text-secondary);
+    cursor: not-allowed;
+}
+
+.submit-btn.success {
+    background-color: #10b981;
+}
+
+.submit-btn.error {
+    background-color: #ef4444;
+}
+
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
