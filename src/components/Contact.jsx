@@ -31,9 +31,9 @@ const Contact = () => {
             transition={{ delay: 0.2 }}
           >
             <div className="info-item">
-              <div className="info-icon">
+              <a href="mailto:info@alejandrogl.es" className="info-icon">
                 <Mail size={24} />
-              </div>
+              </a>
               <div>
                 <h3>{t('contact.emailMe')}</h3>
                 <a href="mailto:info@alejandrogl.es">info@alejandrogl.es</a>

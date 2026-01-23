@@ -12,9 +12,9 @@ const Footer = () => {
         <p className="copyright">
           © {new Date().getFullYear()} Alejandro Gomez. {t('footer.rights')}
         </p>
-        <p className="built-with">
+        {/* <p className="built-with">
           {t('footer.builtWith')} <span className="react">React</span> & <Heart size={14} className="heart-icon" />
-        </p>
+        </p> */}
       </div>
     </footer>
   );

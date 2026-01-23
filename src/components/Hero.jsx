@@ -62,8 +62,8 @@ const Hero = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 1 }}
         >
-          <a href="#" target="_blank" rel="noopener noreferrer" className="social-icon"><Github size={24} /></a>
-          <a href="#" target="_blank" rel="noopener noreferrer" className="social-icon"><Linkedin size={24} /></a>
+          <a href="https://github.com/alejandrogomezl" target="_blank" rel="noopener noreferrer" className="social-icon"><Github size={24} /></a>
+          <a href="https://www.linkedin.com/in/alejandro-gomez-lozano/" target="_blank" rel="noopener noreferrer" className="social-icon"><Linkedin size={24} /></a>
           <a href="mailto:info@alejandrogl.es" className="social-icon"><Mail size={24} /></a>
         </motion.div>
       </div>
