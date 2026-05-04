@@ -30,7 +30,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <a href="#home" className="logo">
-          Portfolio<span className="dot">.</span>
+          Alejandro<span className="dot">.</span>
         </a>
 
         <div className="desktop-menu">
