@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#667eea"/>
+      <stop offset="100%" stop-color="#764ba2"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="300" fill="url(#bg)"/>
+  <circle cx="750" cy="-30" r="200" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="50" cy="330" r="170" fill="rgba(255,255,255,0.05)"/>
+
+  <!-- MQTT/WiFi rings radiating from house -->
+  <circle cx="400" cy="140" r="145" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+  <circle cx="400" cy="140" r="105" fill="none" stroke="rgba(255,255,255,0.11)" stroke-width="1.5"/>
+  <circle cx="400" cy="140" r="68" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+
+  <!-- House icon (center) -->
+  <g transform="translate(400, 130)">
+    <!-- Roof -->
+    <polygon points="0,-44 46,0 -46,0" fill="rgba(255,255,255,0.28)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linejoin="round"/>
+    <!-- Walls -->
+    <rect x="-34" y="0" width="68" height="44" rx="2" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <!-- Door -->
+    <rect x="-10" y="18" width="20" height="26" rx="3" fill="rgba(255,255,255,0.35)"/>
+    <!-- Window left -->
+    <rect x="-28" y="8" width="14" height="14" rx="2" fill="rgba(255,255,255,0.35)"/>
+    <!-- Window right -->
+    <rect x="14" y="8" width="14" height="14" rx="2" fill="rgba(255,255,255,0.35)"/>
+  </g>
+
+  <!-- IoT device nodes around the house -->
+  <!-- Temperature sensor (top left) -->
+  <circle cx="175" cy="80" r="18" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <text x="175" y="85" text-anchor="middle" fill="white" font-family="Arial" font-size="14" opacity="0.85">T°</text>
+  <line x1="193" y1="88" x2="332" y2="132" stroke="rgba(255,255,255,0.22)" stroke-width="1.2" stroke-dasharray="5,4"/>
+
+  <!-- Light bulb (top right) -->
+  <circle cx="625" cy="75" r="18" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <circle cx="625" cy="70" r="8" fill="rgba(255,255,255,0.35)"/>
+  <rect x="621" y="77" width="8" height="5" rx="1" fill="rgba(255,255,255,0.35)"/>
+  <line x1="607" y1="83" x2="468" y2="125" stroke="rgba(255,255,255,0.22)" stroke-width="1.2" stroke-dasharray="5,4"/>
+
+  <!-- Lock / security (right) -->
+  <circle cx="660" cy="160" r="18" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <rect x="654" y="159" width="12" height="10" rx="2" fill="rgba(255,255,255,0.35)"/>
+  <path d="M 656 159 Q 660 152 664 159" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+  <line x1="642" y1="162" x2="456" y2="152" stroke="rgba(255,255,255,0.22)" stroke-width="1.2" stroke-dasharray="5,4"/>
+
+  <!-- Power plug (bottom right) -->
+  <circle cx="600" cy="240" r="18" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <rect x="594" y="233" width="12" height="14" rx="2" fill="rgba(255,255,255,0.3)"/>
+  <line x1="598" y1="233" width="1" y2="229" stroke="rgba(255,255,255,0.5)" stroke-width="2"/>
+  <line x1="602" y1="233" width="1" y2="229" stroke="rgba(255,255,255,0.5)" stroke-width="2"/>
+  <line x1="583" y1="238" x2="438" y2="190" stroke="rgba(255,255,255,0.22)" stroke-width="1.2" stroke-dasharray="5,4"/>
+
+  <!-- Camera (top center) -->
+  <circle cx="400" cy="38" r="18" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <rect x="393" y="32" width="14" height="10" rx="2" fill="rgba(255,255,255,0.3)"/>
+  <polygon points="407,34 415,30 415,42 407,38" fill="rgba(255,255,255,0.4)"/>
+  <line x1="400" y1="56" x2="400" y2="86" stroke="rgba(255,255,255,0.22)" stroke-width="1.2" stroke-dasharray="5,4"/>
+
+  <!-- Motion sensor (bottom left) -->
+  <circle cx="185" cy="228" r="18" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <path d="M 175 218 Q 185 212 195 218" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5"/>
+  <path d="M 173 215 Q 185 207 197 215" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <circle cx="185" cy="222" r="4" fill="rgba(255,255,255,0.45)"/>
+  <line x1="201" y1="222" x2="355" y2="172" stroke="rgba(255,255,255,0.22)" stroke-width="1.2" stroke-dasharray="5,4"/>
+
+  <!-- Node labels -->
+  <text x="175" y="111" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" opacity="0.6">MQTT</text>
+  <text x="625" y="106" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" opacity="0.6">BLE</text>
+  <text x="185" y="259" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" opacity="0.6">ZigBee</text>
+</svg>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="300" fill="url(#bg)"/>
+  <circle cx="700" cy="-20" r="190" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="100" cy="320" r="160" fill="rgba(255,255,255,0.05)"/>
+
+  <!-- Server rack (left side) -->
+  <rect x="60" y="40" width="200" height="230" rx="8" fill="rgba(0,0,0,0.28)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <!-- Rack ears -->
+  <rect x="60" y="40" width="20" height="230" rx="4" fill="rgba(255,255,255,0.08)"/>
+  <rect x="240" y="40" width="20" height="230" rx="4" fill="rgba(255,255,255,0.08)"/>
+  <!-- Rack units -->
+  <!-- Unit 1: Server -->
+  <rect x="88" y="56" width="144" height="38" rx="4" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+  <circle cx="106" cy="75" r="6" fill="#22c55e" opacity="0.85"/>
+  <rect x="120" y="69" width="60" height="5" rx="2.5" fill="rgba(255,255,255,0.35)"/>
+  <rect x="120" y="78" width="40" height="4" rx="2" fill="rgba(255,255,255,0.2)"/>
+  <rect x="208" y="66" width="16" height="18" rx="2" fill="rgba(255,255,255,0.12)"/>
+  <!-- Unit 2: Proxmox -->
+  <rect x="88" y="102" width="144" height="38" rx="4" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+  <circle cx="106" cy="121" r="6" fill="#22c55e" opacity="0.85"/>
+  <rect x="120" y="115" width="55" height="5" rx="2.5" fill="rgba(255,255,255,0.35)"/>
+  <rect x="120" y="124" width="70" height="4" rx="2" fill="rgba(255,255,255,0.2)"/>
+  <rect x="208" y="112" width="16" height="18" rx="2" fill="rgba(255,255,255,0.12)"/>
+  <!-- Unit 3: NAS -->
+  <rect x="88" y="148" width="144" height="38" rx="4" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+  <circle cx="106" cy="167" r="6" fill="#f59e0b" opacity="0.85"/>
+  <rect x="120" y="161" width="48" height="5" rx="2.5" fill="rgba(255,255,255,0.35)"/>
+  <rect x="120" y="170" width="64" height="4" rx="2" fill="rgba(255,255,255,0.2)"/>
+  <rect x="208" y="158" width="16" height="18" rx="2" fill="rgba(255,255,255,0.12)"/>
+  <!-- Unit 4: Network switch -->
+  <rect x="88" y="194" width="144" height="28" rx="4" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <circle cx="104" cy="208" r="4" fill="#22c55e" opacity="0.7"/>
+  <circle cx="116" cy="208" r="4" fill="#22c55e" opacity="0.7"/>
+  <circle cx="128" cy="208" r="4" fill="#22c55e" opacity="0.7"/>
+  <circle cx="140" cy="208" r="4" fill="#f59e0b" opacity="0.7"/>
+  <circle cx="152" cy="208" r="4" fill="#22c55e" opacity="0.7"/>
+  <circle cx="164" cy="208" r="4" fill="#22c55e" opacity="0.7"/>
+  <!-- Labels -->
+  <text x="160" y="250" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="10">Proxmox · Nginx · Linux</text>
+
+  <!-- Docker containers (right side, stacked) -->
+  <g transform="translate(350, 30)">
+    <!-- Docker logo hint: whale body -->
+    <text x="185" y="26" text-anchor="middle" fill="rgba(255,255,255,0.25)" font-family="Arial" font-size="11" letter-spacing="2">DOCKER</text>
+    <!-- Container stack -->
+    <!-- Container 1 (nginx) -->
+    <rect x="80" y="35" width="200" height="48" rx="6" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+    <rect x="80" y="35" width="6" height="48" rx="3" fill="#22c55e" opacity="0.7"/>
+    <text x="97" y="56" fill="white" font-family="monospace" font-size="12" opacity="0.9">nginx:latest</text>
+    <text x="97" y="72" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="10">port: 80, 443</text>
+    <circle cx="268" cy="59" r="6" fill="rgba(34,197,94,0.7)"/>
+    <!-- Container 2 (homeassistant) -->
+    <rect x="80" y="91" width="200" height="48" rx="6" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+    <rect x="80" y="91" width="6" height="48" rx="3" fill="#3b82f6" opacity="0.7"/>
+    <text x="97" y="112" fill="white" font-family="monospace" font-size="12" opacity="0.9">homeassistant</text>
+    <text x="97" y="128" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="10">port: 8123</text>
+    <circle cx="268" cy="115" r="6" fill="rgba(34,197,94,0.7)"/>
+    <!-- Container 3 (pihole) -->
+    <rect x="80" y="147" width="200" height="48" rx="6" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+    <rect x="80" y="147" width="6" height="48" rx="3" fill="#f59e0b" opacity="0.7"/>
+    <text x="97" y="168" fill="white" font-family="monospace" font-size="12" opacity="0.9">pihole:latest</text>
+    <text x="97" y="184" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="10">port: 53, 80</text>
+    <circle cx="268" cy="171" r="6" fill="rgba(34,197,94,0.7)"/>
+    <!-- Container 4 (portainer) -->
+    <rect x="80" y="203" width="200" height="48" rx="6" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+    <rect x="80" y="203" width="6" height="48" rx="3" fill="#a855f7" opacity="0.7"/>
+    <text x="97" y="224" fill="white" font-family="monospace" font-size="12" opacity="0.9">portainer:ee</text>
+    <text x="97" y="240" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="10">port: 9000</text>
+    <circle cx="268" cy="227" r="6" fill="rgba(34,197,94,0.7)"/>
+  </g>
+
+  <!-- Connecting line from rack to containers -->
+  <line x1="260" y1="155" x2="430" y2="155" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-dasharray="6,5"/>
+</svg>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="300" fill="url(#bg)"/>
+  <circle cx="720" cy="-20" r="200" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="80" cy="320" r="160" fill="rgba(255,255,255,0.05)"/>
+
+  <!-- Quadruped robot (Go2 / Unitree style) - center left -->
+  <g transform="translate(280, 148)">
+    <!-- Body -->
+    <rect x="-70" y="-26" width="140" height="52" rx="12" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
+    <!-- Head -->
+    <rect x="54" y="-18" width="38" height="36" rx="8" fill="rgba(255,255,255,0.22)" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
+    <!-- Eye (sensor) -->
+    <rect x="62" y="-8" width="22" height="8" rx="3" fill="rgba(45,212,191,0.8)"/>
+    <!-- Front legs (right side of body = forward) -->
+    <line x1="44" y1="22" x2="60" y2="60" stroke="rgba(255,255,255,0.5)" stroke-width="8" stroke-linecap="round"/>
+    <line x1="60" y1="60" x2="50" y2="90" stroke="rgba(255,255,255,0.4)" stroke-width="6" stroke-linecap="round"/>
+    <line x1="44" y1="-22" x2="60" y2="-55" stroke="rgba(255,255,255,0.5)" stroke-width="8" stroke-linecap="round"/>
+    <line x1="60" y1="-55" x2="50" y2="-85" stroke="rgba(255,255,255,0.4)" stroke-width="6" stroke-linecap="round"/>
+    <!-- Rear legs -->
+    <line x1="-44" y1="22" x2="-58" y2="60" stroke="rgba(255,255,255,0.45)" stroke-width="8" stroke-linecap="round"/>
+    <line x1="-58" y1="60" x2="-48" y2="90" stroke="rgba(255,255,255,0.35)" stroke-width="6" stroke-linecap="round"/>
+    <line x1="-44" y1="-22" x2="-58" y2="-55" stroke="rgba(255,255,255,0.45)" stroke-width="8" stroke-linecap="round"/>
+    <line x1="-58" y1="-55" x2="-48" y2="-85" stroke="rgba(255,255,255,0.35)" stroke-width="6" stroke-linecap="round"/>
+    <!-- IMU indicator -->
+    <circle cx="0" cy="0" r="10" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <circle cx="0" cy="0" r="4" fill="rgba(45,212,191,0.7)"/>
+  </g>
+
+  <!-- ROS2 node graph (right side) -->
+  <g>
+    <!-- Central node: robot_state -->
+    <circle cx="570" cy="110" r="28" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
+    <text x="570" y="106" text-anchor="middle" fill="white" font-family="monospace" font-size="9" opacity="0.9">/robot</text>
+    <text x="570" y="118" text-anchor="middle" fill="white" font-family="monospace" font-size="9" opacity="0.9">_state</text>
+
+    <!-- Node: controller -->
+    <circle cx="660" cy="60" r="24" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.28)" stroke-width="1.5"/>
+    <text x="660" y="56" text-anchor="middle" fill="white" font-family="monospace" font-size="8" opacity="0.85">/ctrl</text>
+    <text x="660" y="67" text-anchor="middle" fill="white" font-family="monospace" font-size="8" opacity="0.85">_node</text>
+    <line x1="594" y1="93" x2="638" y2="76" stroke="rgba(255,255,255,0.28)" stroke-width="1.2" stroke-dasharray="5,4"/>
+    <circle cx="638" cy="76" r="3" fill="rgba(255,255,255,0.5)"/>
+
+    <!-- Node: camera -->
+    <circle cx="680" cy="155" r="24" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.28)" stroke-width="1.5"/>
+    <text x="680" y="151" text-anchor="middle" fill="white" font-family="monospace" font-size="8" opacity="0.85">/cam</text>
+    <text x="680" y="162" text-anchor="middle" fill="white" font-family="monospace" font-size="8" opacity="0.85">_node</text>
+    <line x1="597" y1="120" x2="657" y2="143" stroke="rgba(255,255,255,0.28)" stroke-width="1.2" stroke-dasharray="5,4"/>
+    <circle cx="657" cy="143" r="3" fill="rgba(255,255,255,0.5)"/>
+
+    <!-- Node: lidar -->
+    <circle cx="640" cy="220" r="24" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.28)" stroke-width="1.5"/>
+    <text x="640" y="216" text-anchor="middle" fill="white" font-family="monospace" font-size="8" opacity="0.85">/lidar</text>
+    <text x="640" y="227" text-anchor="middle" fill="white" font-family="monospace" font-size="8" opacity="0.85">_scan</text>
+    <line x1="579" y1="133" x2="621" y2="207" stroke="rgba(255,255,255,0.28)" stroke-width="1.2" stroke-dasharray="5,4"/>
+    <circle cx="621" cy="207" r="3" fill="rgba(255,255,255,0.5)"/>
+
+    <!-- Node: navigation -->
+    <circle cx="500" cy="60" r="24" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.28)" stroke-width="1.5"/>
+    <text x="500" y="56" text-anchor="middle" fill="white" font-family="monospace" font-size="8" opacity="0.85">/nav</text>
+    <text x="500" y="67" text-anchor="middle" fill="white" font-family="monospace" font-size="8" opacity="0.85">_stack</text>
+    <line x1="546" y1="88" x2="522" y2="76" stroke="rgba(255,255,255,0.28)" stroke-width="1.2" stroke-dasharray="5,4"/>
+    <circle cx="522" cy="76" r="3" fill="rgba(255,255,255,0.5)"/>
+  </g>
+
+  <!-- Code snippet bottom -->
+  <rect x="52" y="226" width="696" height="55" rx="8" fill="rgba(0,0,0,0.22)"/>
+  <text x="72" y="248" fill="#93c5fd" font-family="Courier New, monospace" font-size="12" opacity="0.95">#include</text>
+  <text x="130" y="248" fill="#86efac" font-family="Courier New, monospace" font-size="12" opacity="0.9"> "rclcpp/rclcpp.hpp"</text>
+  <text x="72" y="267" fill="rgba(255,255,255,0.55)" font-family="Courier New, monospace" font-size="12">auto node = rclcpp::Node::make_shared(</text>
+  <text x="440" y="267" fill="#86efac" font-family="Courier New, monospace" font-size="12" opacity="0.85">"unitree_ctrl"</text>
+  <text x="563" y="267" fill="rgba(255,255,255,0.55)" font-family="Courier New, monospace" font-size="12">);</text>
+</svg>

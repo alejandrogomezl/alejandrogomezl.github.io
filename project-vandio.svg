@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f766e"/>
+      <stop offset="100%" stop-color="#1e40af"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="300" fill="url(#bg)"/>
+  <circle cx="720" cy="-20" r="190" fill="rgba(255,255,255,0.04)"/>
+  <circle cx="80" cy="320" r="160" fill="rgba(255,255,255,0.04)"/>
+
+  <!-- Hotel building (left) -->
+  <g transform="translate(180, 90)">
+    <rect x="-45" y="0" width="90" height="120" rx="4" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+    <!-- Windows grid -->
+    <rect x="-35" y="10" width="16" height="14" rx="2" fill="rgba(255,255,255,0.3)"/>
+    <rect x="-10" y="10" width="16" height="14" rx="2" fill="rgba(255,255,255,0.3)"/>
+    <rect x="15" y="10" width="16" height="14" rx="2" fill="rgba(255,255,255,0.3)"/>
+    <rect x="-35" y="33" width="16" height="14" rx="2" fill="rgba(255,255,255,0.2)"/>
+    <rect x="-10" y="33" width="16" height="14" rx="2" fill="rgba(255,255,255,0.3)"/>
+    <rect x="15" y="33" width="16" height="14" rx="2" fill="rgba(255,255,255,0.2)"/>
+    <rect x="-35" y="56" width="16" height="14" rx="2" fill="rgba(255,255,255,0.3)"/>
+    <rect x="-10" y="56" width="16" height="14" rx="2" fill="rgba(255,255,255,0.2)"/>
+    <rect x="15" y="56" width="16" height="14" rx="2" fill="rgba(255,255,255,0.3)"/>
+    <!-- Door -->
+    <rect x="-14" y="88" width="28" height="32" rx="3" fill="rgba(255,255,255,0.2)"/>
+    <!-- Label -->
+    <text x="0" y="138" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="11" opacity="0.6">HOTEL</text>
+  </g>
+
+  <!-- Dashed connection line hotel -> center -->
+  <line x1="230" y1="150" x2="330" y2="150" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- Central AI brain / chat hub -->
+  <g transform="translate(400, 150)">
+    <!-- Outer glow ring -->
+    <circle cx="0" cy="0" r="62" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+    <!-- Inner circle -->
+    <circle cx="0" cy="0" r="44" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+    <!-- Chat bubble main -->
+    <rect x="-22" y="-18" width="44" height="28" rx="8" fill="rgba(255,255,255,0.35)"/>
+    <polygon points="-8,10 -16,22 4,10" fill="rgba(255,255,255,0.35)"/>
+    <!-- Dots inside bubble -->
+    <circle cx="-10" cy="-4" r="3.5" fill="rgba(20,80,80,0.7)"/>
+    <circle cx="0" cy="-4" r="3.5" fill="rgba(20,80,80,0.7)"/>
+    <circle cx="10" cy="-4" r="3.5" fill="rgba(20,80,80,0.7)"/>
+  </g>
+
+  <!-- Dashed connection line center -> channels -->
+  <line x1="460" y1="130" x2="530" y2="95" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <line x1="462" y1="150" x2="540" y2="150" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <line x1="460" y1="170" x2="530" y2="208" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- WhatsApp node -->
+  <circle cx="560" cy="85" r="26" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <circle cx="560" cy="82" r="13" fill="rgba(255,255,255,0.3)"/>
+  <path d="M 553 76 Q 560 70 567 76 L 567 88 Q 560 94 553 88 Z" fill="rgba(20,100,60,0.5)"/>
+  <path d="M 557 79 Q 560 77 563 79 L 563 87 Q 560 89 557 87 Z" fill="rgba(255,255,255,0.5)"/>
+  <text x="560" y="122" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9" opacity="0.6">WhatsApp</text>
+
+  <!-- Web chat node -->
+  <circle cx="572" cy="150" r="26" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <rect x="560" y="140" width="24" height="16" rx="4" fill="rgba(255,255,255,0.3)"/>
+  <polygon points="562,156 556,164 572,156" fill="rgba(255,255,255,0.3)"/>
+  <text x="572" y="186" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9" opacity="0.6">Web Chat</text>
+
+  <!-- Telegram node -->
+  <circle cx="555" cy="215" r="26" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <path d="M 543 210 L 567 202 L 559 224 L 552 218 L 543 222 Z" fill="rgba(255,255,255,0.35)" stroke="rgba(255,255,255,0.2)" stroke-width="0.5"/>
+  <text x="555" y="252" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9" opacity="0.6">Telegram</text>
+
+  <!-- Sparkle AI stars -->
+  <g opacity="0.7">
+    <polygon points="310,60 314,72 326,72 316,80 320,92 310,84 300,92 304,80 294,72 306,72" fill="rgba(255,255,255,0.5)" transform="scale(0.6) translate(120,-20)"/>
+    <polygon points="650,40 653,50 663,50 655,56 658,66 650,60 642,66 645,56 637,50 647,50" fill="rgba(255,255,255,0.4)" transform="scale(0.5) translate(650,30)"/>
+    <polygon points="350,230 352,238 360,238 354,243 356,251 350,246 344,251 346,243 340,238 348,238" fill="rgba(255,255,255,0.35)" transform="scale(0.7) translate(-10,20)"/>
+  </g>
+
+  <!-- Vandio label -->
+  <text x="400" y="272" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold" opacity="0.85" letter-spacing="3">VANDIO</text>
+  <text x="400" y="290" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" opacity="0.5">AI Concierge Platform</text>
+</svg>
