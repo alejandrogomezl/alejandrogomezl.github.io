@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, ExternalLink } from 'lucide-react';
 import './Projects.css';
 
 const Projects = () => {
@@ -12,43 +12,59 @@ const Projects = () => {
 
   const projects = [
     {
+      title: t('projects.vandio.title'),
+      description: t('projects.vandio.description'),
+      tech: ["Next.js", "TypeScript", "AI", "WhatsApp API"],
+      github: null,
+      live: "https://vandio.es/",
+      image: `${base}project-vandio.svg`
+    },
+    {
+      title: t('projects.rutas.title'),
+      description: t('projects.rutas.description'),
+      tech: ["Next.js", "TypeScript", "PostgreSQL", "Prisma"],
+      github: null,
+      live: null,
+      image: `${base}project-rutas.svg`
+    },
+    {
       title: t('projects.odoo.title'),
       description: t('projects.odoo.description'),
       tech: ["Python", "PostgreSQL", "XML", "JavaScript"],
-      github: "#",
-      live: "#",
+      github: null,
+      live: null,
       image: `${base}project-odoo.svg`
     },
     {
       title: t('projects.nebstala.title'),
       description: t('projects.nebstala.description'),
       tech: ["Python", "Odoo", "MQTT", "Node.js"],
-      github: "#",
-      live: "#",
+      github: null,
+      live: null,
       image: `${base}project-nebstala.svg`
     },
     {
       title: t('projects.homelab.title'),
       description: t('projects.homelab.description'),
       tech: ["Docker", "Proxmox", "Nginx", "Linux"],
-      github: "#",
-      live: "#",
+      github: null,
+      live: null,
       image: `${base}project-homelab.svg`
     },
     {
       title: t('projects.unitree.title'),
       description: t('projects.unitree.description'),
       tech: ["C++", "ROS2", "Python", "IoT"],
-      github: "#",
-      live: "#",
+      github: null,
+      live: null,
       image: `${base}project-unitree.svg`
     },
     {
       title: t('projects.meshtastic.title'),
       description: t('projects.meshtastic.description'),
       tech: ["LoRa", "C++", "Python", "IoT"],
-      github: "#",
-      live: "#",
+      github: null,
+      live: null,
       image: `${base}project-meshtastic.svg`
     }
   ];
@@ -111,14 +127,13 @@ const Projects = () => {
                   ))}
                 </div>
                 
-                {/* <div className="card-links">
-                  <a href={project.github} className="link-icon" title="View Code">
-                    <Github size={20} />
-                  </a>
-                  <a href={project.live} className="link-icon" title="View Live">
-                    <ExternalLink size={20} />
-                  </a>
-                </div> */}
+                {project.live && (
+                  <div className="card-links" onClick={(e) => e.stopPropagation()}>
+                    <a href={project.live} target="_blank" rel="noopener noreferrer" className="link-icon" title="View Live">
+                      <ExternalLink size={20} />
+                    </a>
+                  </div>
+                )}
               </div>
             </motion.div>
             );

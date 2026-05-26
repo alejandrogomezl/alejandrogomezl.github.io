@@ -22,6 +22,14 @@
   },
   "projects": {
     "title": "Featured Projects",
+    "vandio": {
+      "title": "Vandio · AI Concierge for Hotels & Rentals",
+      "description": "AI-powered virtual concierge that automatically responds to guest inquiries 24/7 via WhatsApp, web chat, and Telegram. Built on a customizable knowledge base from property documents, it automates guest communication, reduces staffing needs, and enables seamless escalation to human agents."
+    },
+    "rutas": {
+      "title": "Rutas · Delivery Route Management",
+      "description": "Web application for managing delivery routes and stops, with user roles, route run tracking, payment methods, and an admin panel. Built for logistics and courier operations, enabling real-time status updates and full traceability of each delivery."
+    },
     "nebstala": {
       "title": "Nebstala · Smart Domotics Management for STR",
       "description": "A smart domotics management system for short-term rental (STR) properties, centralizing access control, climate management, and smart devices to automate operations, reduce energy consumption, and enhance the guest experience."

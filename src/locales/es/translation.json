@@ -22,6 +22,14 @@
   },
   "projects": {
     "title": "Proyectos Destacados",
+    "vandio": {
+      "title": "Vandio · Conserje IA para Hoteles y Alojamientos",
+      "description": "Conserje virtual con IA que responde automáticamente a las consultas de los huéspedes 24/7 por WhatsApp, chat web y Telegram. Basado en una base de conocimiento personalizable, automatiza la comunicación, reduce la carga del personal y permite escalar a agentes humanos de forma fluida."
+    },
+    "rutas": {
+      "title": "Rutas · Gestión de Rutas de Reparto",
+      "description": "Aplicación web para la gestión de rutas de reparto y paradas, con roles de usuario, seguimiento de rondas, métodos de pago y panel de administración. Diseñada para operaciones logísticas y de mensajería, permitiendo actualizaciones en tiempo real y trazabilidad completa de cada entrega."
+    },
     "nebstala": {
       "title": "Nebstala · Sistema de Gestión Domótica para STR",
       "description": "Sistema de gestión domótica orientado a alojamientos de alquiler de corta estancia (STR), que centraliza el control de accesos, climatización y dispositivos inteligentes para automatizar operaciones, reducir el consumo energético y mejorar la experiencia del huésped."
