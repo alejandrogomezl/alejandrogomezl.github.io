@@ -138,3 +138,38 @@
         margin: 0 auto;
     }
 }
+.education-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 1.25rem;
+    margin-top: 0.5rem;
+    background-color: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-left: 3px solid var(--accent);
+    border-radius: 12px;
+}
+
+.education-icon {
+    color: var(--accent);
+    flex-shrink: 0;
+    margin-top: 0.15rem;
+}
+
+.education-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+}
+
+.education-degree {
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+.education-detail {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}

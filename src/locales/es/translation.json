@@ -8,20 +8,78 @@
   },
   "hero": {
     "greeting": "Hola, soy",
-    "role": "Ingeniero de Software",
-    "description": "Diseño y desarrollo soluciones de software reales, desde backends e integraciones hasta infraestructura, domótica e IoT, con mentalidad de producto y foco en negocio.",
+    "role": "Desarrollador y Consultor Odoo · Ingeniero de Software",
+    "description": "Implanto, desarrollo e integro Odoo para que el ERP se adapte al negocio y no al revés: consultoría funcional, módulos a medida e integraciones con cualquier sistema externo.",
     "viewWork": "Ver Trabajos",
     "contactMe": "Contáctame"
   },
   "about": {
     "title": "Sobre Mí",
-    "p1": "Soy Ingeniero de Software con experiencia en el diseño y desarrollo de sistemas reales, desde backends e integraciones complejas hasta infraestructura, automatización y soluciones IoT. Mi trayectoria está marcada por el trabajo en entornos profesionales orientados a negocio, además de la creación de productos propios.",
-    "p2": "He trabajado como desarrollador y consultor funcional en proyectos ERP, integraciones a medida y desarrollo freelance, afrontando problemas técnicos complejos y transformándolos en soluciones escalables, mantenibles y alineadas con las necesidades del cliente.",
+    "p1": "Soy Graduado en Ingeniería Informática, especializado en Ingeniería del Software, y cursé la carrera en modalidad bilingüe (español–inglés). Me dedico principalmente al desarrollo y la consultoría de Odoo: analizo procesos de negocio, implanto el ERP y construyo los módulos e integraciones que cada empresa necesita.",
+    "p2": "He trabajado como desarrollador y consultor funcional en proyectos Odoo de fabricación, distribución, servicios y hostelería, conectando el ERP con control de accesos, almacenes automáticos, PMS, e-commerce, telefonía o bancos. Fuera del ERP también creo productos propios con IA, IoT e infraestructura.",
     "yearsExperience": "Años de Experiencia",
-    "projectsCompleted": "Proyectos Completados"
+    "projectsCompleted": "Proyectos Completados",
+    "education": "Formación",
+    "degree": "Grado en Ingeniería Informática",
+    "degreeDetail": "Especialidad en Ingeniería del Software · Modalidad bilingüe"
   },
   "projects": {
-    "title": "Proyectos Destacados",
+    "title": "Proyectos",
+    "otherTitle": "Otros Proyectos",
+    "odoo": {
+      "title": "Odoo · Consultoría e Integraciones",
+      "description": "Mi principal área de trabajo. Acompaño a las empresas en todo el ciclo de Odoo: desde el análisis de procesos y la implantación hasta el desarrollo a medida, las integraciones con terceros y el despliegue en producción.",
+      "areas": {
+        "consulting": {
+          "title": "Consultoría funcional e implantación",
+          "description": "Análisis de procesos y configuración de Odoo para que el ERP refleje cómo trabaja realmente la empresa.",
+          "highlights": [
+            "Implantación de ventas, compras, inventario, fabricación (MRP), contabilidad y RRHH",
+            "Localización española: informes contables y fiscales",
+            "Manuales de usuario, formación y soporte a equipos",
+            "Diagnóstico y resolución de incidencias en producción"
+          ]
+        },
+        "modules": {
+          "title": "Desarrollo de módulos a medida",
+          "description": "Extensiones en Python, OWL y QWeb que cubren lo que el estándar no resuelve, siguiendo las buenas prácticas de la OCA.",
+          "highlights": [
+            "Facturación por hitos, comisiones de venta y costes de fabricación por centro de trabajo",
+            "Contratos dinámicos, flujos de proceso con matriz RACI y firmas de usuario",
+            "Portales de cliente, autodiagnósticos web y cursos e-learning",
+            "Seguridad por equipos, auditoría de cambios de estado e informes financieros"
+          ]
+        },
+        "integrations": {
+          "title": "Integraciones con sistemas externos",
+          "description": "Conectores que sincronizan Odoo con hardware, plataformas y servicios de terceros vía API.",
+          "highlights": [
+            "Control de accesos y fichajes (BioStar) y almacenes automáticos verticales (Modula)",
+            "PMS hotelero (WuBook): exportación de facturas y reservas",
+            "E-commerce: sincronización con WordPress/WooCommerce y PrestaShop",
+            "Telefonía VoIP e importación bancaria online"
+          ]
+        },
+        "ai": {
+          "title": "IA aplicada a Odoo",
+          "description": "Llevo los modelos de lenguaje al ERP para consultar y operar con los datos del negocio.",
+          "highlights": [
+            "Servidor MCP propio para conectar asistentes de IA a cualquier instancia de Odoo",
+            "Sistema RAG con OpenAI Vector Stores sobre la documentación de la empresa",
+            "Asistentes de IA integrados en los flujos del ERP"
+          ]
+        },
+        "devops": {
+          "title": "Infraestructura y despliegue",
+          "description": "Entornos Odoo reproducibles y mantenibles, de desarrollo a producción.",
+          "highlights": [
+            "Despliegues con Docker y Doodba, de Odoo Community a Enterprise",
+            "Gestión de addons OCA, migraciones y actualizaciones de versión",
+            "Monitorización, ajuste de rendimiento y copias de seguridad"
+          ]
+        }
+      }
+    },
     "vandio": {
       "title": "Vandio · Conserje IA para Hoteles y Alojamientos",
       "description": "Conserje virtual con IA que responde automáticamente a las consultas de los huéspedes 24/7 por WhatsApp, chat web y Telegram. Basado en una base de conocimiento personalizable, automatiza la comunicación, reduce la carga del personal y permite escalar a agentes humanos de forma fluida."
@@ -42,10 +100,6 @@
       "title": "Integración Unitree Robotics",
       "description": "Proyecto de integración y control de robótica cuadrúpeda, combinando software, sistemas e IoT para experimentación, automatización y control avanzado de dispositivos."
     },
-    "odoo": {
-      "title": "Desarrollo e Integraciones en Odoo",
-      "description": "Desarrollo de módulos personalizados, integraciones a medida y consultoría funcional en entornos ERP para la optimización de procesos de negocio."
-    },
     "meshtastic": {
       "title": "Meshtastic · Redes Mesh & LoRa",
       "description": "Despliegue y configuración de redes mesh basadas en LoRa con Meshtastic, orientadas a comunicaciones descentralizadas, resilientes y de largo alcance, integrando nodos, sensores y servicios personalizados."
@@ -56,7 +110,8 @@
     "frontend": "Desarrollo Frontend",
     "backend": "Backend y Base de Datos",
     "tools": "Herramientas y DevOps",
-    "core": "Conceptos Core"
+    "core": "Conceptos Core",
+    "odoo": "Odoo y ERP"
   },
   "contact": {
     "title": "Hablemos",

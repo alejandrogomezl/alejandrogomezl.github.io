@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Code, Server, Globe } from 'lucide-react';
+import { GraduationCap } from 'lucide-react';
 import './About.css';
 
 const About = () => {
@@ -25,9 +25,18 @@ const About = () => {
             {t('about.p2')}
           </p>
           
+          <div className="education-item">
+            <div className="education-icon"><GraduationCap size={24} /></div>
+            <div>
+              <span className="education-label">{t('about.education')}</span>
+              <p className="education-degree">{t('about.degree')}</p>
+              <p className="education-detail">{t('about.degreeDetail')}</p>
+            </div>
+          </div>
+
           <div className="stats-grid">
             <div className="stat-item">
-              <span className="stat-number">2+</span>
+              <span className="stat-number">+3</span>
               <span className="stat-label">{t('about.yearsExperience')}</span>
             </div>
             {/* <div className="stat-item">
@@ -56,7 +65,11 @@ const About = () => {
                 <code>
 <span className="json-key">"name"</span>: <span className="json-string">"Alejandro Gómez"</span>,
 <br/>
-<span className="json-key">"role"</span>: <span className="json-string">"Software Engineer"</span>,
+<span className="json-key">"role"</span>: <span className="json-string">"Odoo Developer & Consultant"</span>,
+<br/>
+<span className="json-key">"degree"</span>: <span className="json-string">"BSc Computer Engineering (Software Eng.)"</span>,
+<br/>
+<span className="json-key">"languages"</span>: [<span className="json-string">"Spanish"</span>, <span className="json-string">"English"</span>],
 <br/>
 <span className="json-key">"location"</span>: <span className="json-string">"Albacete, Spain"</span>,
 <br/>

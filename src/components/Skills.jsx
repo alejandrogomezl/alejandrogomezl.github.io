@@ -1,13 +1,18 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Code2, Database, Layout, Settings } from 'lucide-react';
+import { Boxes, Database, Layout, Settings } from 'lucide-react';
 import './Skills.css';
 
 const Skills = () => {
   const { t } = useTranslation();
 
   const skillCategories = [
+    {
+      title: t('skills.odoo'),
+      icon: <Boxes size={24} />,
+      skills: ["Odoo Community", "Odoo Enterprise", "OWL", "QWeb", "OCA", "XML-RPC", "Doodba"]
+    },
     {
       title: t('skills.frontend'),
       icon: <Layout size={24} />,
